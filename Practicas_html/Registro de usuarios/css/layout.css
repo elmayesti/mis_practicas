@@ -1,0 +1,84 @@
+body{
+    background-image: linear-gradient(to right, #853ee1, #007aff, #009eff, #00b8ed, #15ccd4);
+}
+
+/*Títulos y subtitulos*/
+h1,h3{
+    text-align: center;
+}
+#titulo_lista1{
+    color: rgb(201, 108, 108);
+    text-align: center;
+    text-shadow: 2px 2px black;
+}
+#titulo_1{
+    font-family: 'Caveat', cursive;
+}
+/*Párrafos*/
+p{
+    font-family: 'Crimson Text', serif;
+    text-align: center;
+    font-size: large;
+}
+
+/*Diseño de tabla*/
+table{
+    width: 100%;
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 25px;
+}
+th, td{
+    border: 1px solid grey;
+    text-align: center;
+}
+thead{
+    background: rgb(153, 229, 248);
+}
+td{
+    background-color: rgb(211, 222, 231);
+}
+
+/*anchords*/
+a{
+    display: flex;
+    justify-content: right;
+    font-weight: bold;
+    font-size: larger;
+}
+
+/*Formularios*/
+#mainRegister{
+    display: flex;
+    justify-content: center;
+}
+form[name="registro_clts"]{
+    background-color: white;
+    border: rgb(115, 21, 238) solid 3px;
+    padding: 20px 45px;
+    border-radius: 25px;
+    box-shadow: 0 0 15px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 28vh;
+}
+input[type="submit"]{
+    background-color: rgb(44, 172, 172);
+    color: black;
+    padding: 10px 16px;
+    border: solid 2px rgba(129, 22, 143, 0.911);
+    border-radius: 16px;
+    cursor: pointer;
+}
+input[type="reset"]{
+    background-color: rgb(44, 172, 172);
+    color: black;
+    padding: 10px 16px;
+    border: solid 2px rgba(129, 22, 143, 0.911);
+    border-radius: 16px;
+    cursor: pointer;
+}
+

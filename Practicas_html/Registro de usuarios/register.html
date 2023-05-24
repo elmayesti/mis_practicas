@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse!</title>
+    <link rel="stylesheet" href="./css/layout.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <span><a href="index.html">Página principal</a></span>
+        </nav>
+        <h1>Seguros Vitality's C.A</h1>
+        <h3>Registro de usuario</h3>
+    </header>
+    <main id="mainRegister">
+            <form name="registro_clts" action="" method="POST">
+                <div>
+                    <label for="nombre">Ingrese su nombre:</label>
+                    <input id="nombre" type="text" required>                 
+                </div>
+
+                <div>
+                    <label for="apellido">Ingrese su apellido:</label>
+                    <input type="text" name="apellido" id="apellido" maxlength="10">
+                </div>
+                <div>
+                    <label for="clts_email">Correo electrónico:</label>
+                    <input type="email" name="correo" id="clts_email" required>
+                </div>
+                <div>
+                    <label for="password">Ingrese su contraseña:</label>
+                    <input type="password" id="password" required>
+                </div>
+                <div>
+                    <label for="confirm_pass">Confirme su contraseña:</label>
+                    <input type="password" id="confirm_pass" required>
+                </div>
+                <div>
+                    Indique su género:
+                    <select id="sexo" name="Sexo" required>
+                        <option value="0">-</option>
+                        <option value="1">Masculino</option>
+                        <option value="2">Femenino</option>
+                        <option value="3">Indefinido</option>
+                    </select>
+                </div>
+                <div>
+                    Indique sus posesiones:
+                    <input type="checkbox" name="articulos" value="1">Casa
+                    <input type="checkbox" name="articulos" value="2">Apartamento
+                    <input type="checkbox" name="articulos" value="3">Carro
+                    <input type="checkbox" name="articulos" value="4">Bote
+                    <input type="checkbox" name="articulos" value="5">Local
+                </div>
+                <div>
+                    Indique su estado civil:
+                    <input type="radio" name="estado_civil" value="1">Soltero(a)
+                    <input type="radio" name="estado_civil" value="2">Casado(a)
+                    <input type="radio" name="estado_civil" value="3">Divorciado(a)
+                    <input type="radio" name="estado_civil" value="4">Viudo(a)
+                </div>
+                <div>
+                    <input type="submit" value="Cargar" name="enviar">
+                    <input type="reset" value="Limpiar campos">
+                </div>
+            </form>
+    </main>
+</body>
+</html>
